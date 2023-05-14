@@ -6,4 +6,9 @@ head {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+
+  .content-container {
+    max-width: 1172px;
+    margin: 0 auto;
+  }
 }
