@@ -3,7 +3,14 @@ import './styles.scss';
 
 const HomePage = () => {
   return (
-    <div className='text'>Test</div>
+    <div className="hero">
+      <div className="hero-content">
+        <h1>Дизайнерская мебель</h1>
+        <p>Широкий ассортимент изделий от лучших немецких 
+дизайнеров, безупречное качество и стиль</p>
+        <button>Смотреть каталог</button>
+      </div>
+    </div>
   )
 }
 
