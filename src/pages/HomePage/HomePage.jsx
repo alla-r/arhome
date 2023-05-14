@@ -8,6 +8,7 @@ import "./styles.scss";
 const HomePage = () => {
   return (
     <>
+      {/* HEADER SECTION */}
       <div className="header">
         <div className="header-black">
           <div className="content-container">
@@ -66,6 +67,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      {/* HERO SECTION */}
       <div className="hero">
         <div className="hero--content">
           <h1>Дизайнерская мебель</h1>
@@ -76,6 +78,40 @@ const HomePage = () => {
           <button>Смотреть каталог</button>
         </div>
       </div>
+      {/* CATALOG */}
+      <div className="catalog content-container">
+        <div className="catalog--header-section">
+          <div className="separator"></div>
+          <h4 className="catalog--header">Каталог</h4>
+          <div className="separator"></div>
+        </div>
+        <div className="catalog--content-section">
+          <div className="catalog--first-row">
+            <div className="catalog--item">
+              <p>Декор</p>
+            </div>
+            <div className="catalog--item">
+              <p>Текстиль</p>
+            </div>
+            <div className="catalog--item">
+              <p>Ковры</p>
+            </div>
+          </div>
+          <div className="catalog--second-row">
+            <div className="catalog--item">
+              <p>Мебель</p>
+            </div>
+            <div className="catalog--item">
+              <p>Освещение</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* LATEST */}
+      {/* TOP SALES */}
+      {/* PROMOTION */}
+      {/* NEWS */}
+      {/* ABOUT SECTION */}
       <div className="about--section content-container">
         <div className="about--header-section">
           <div className="separator"></div>
@@ -99,6 +135,7 @@ const HomePage = () => {
           <div className="about--show-more">Читать далее</div>
         </div>
       </div>
+      {/* FOOTER SECTION */}
     </>
   );
 };

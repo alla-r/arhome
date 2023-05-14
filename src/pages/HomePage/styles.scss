@@ -1,3 +1,4 @@
+// HEADER
 .header {
   height: 173px;
   width: 100vw;
@@ -146,6 +147,7 @@
   }
 }
 
+// HERO
 .hero {
   width: 100%;
   height: calc(100vh - 173px);
@@ -199,6 +201,120 @@
   }
 }
 
+// CATALOG
+.catalog {
+  margin-top: 52px !important;
+
+  .catalog--header-section {
+    display: flex;
+    align-items: center;
+
+    .separator {
+      width: 478px;
+      height: 1px;
+      background: #0c0c0c;
+      opacity: 0.2;
+    }
+
+    .catalog--header {
+      margin-right: 30px;
+      margin-left: 26px;
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 68px;
+      text-align: center;
+      color: #0c0c0c;
+    }
+  }
+
+  .catalog--content-section {
+    margin-top: 48px;
+
+    .catalog--first-row {
+      display: flex;
+
+      .catalog--item {
+        margin-right: 20px;
+        width: 377px;
+        height: 436px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url("../../global/assets/images/decor.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &:nth-child(2) {
+          background: url("../../global/assets/images/textile.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        &:nth-child(3) {
+          background: url("../../global/assets/images/carpet.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        &:nth-last-child(1) {
+          margin-right: 0px;
+        }
+
+        p {
+          padding: 15px 30px;
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 51px;
+          color: #0c0c0c;
+          background-color: rgba(255, 255, 255, 0.8);
+        }
+      }
+    }
+
+    .catalog--second-row {
+      margin-top: 20px;
+      display: flex;
+
+      .catalog--item {
+        margin-right: 20px;
+        width: 580px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url("../../global/assets/images/furniture.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &:nth-child(2) {
+          background: url("../../global/assets/images/lighting.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        &:nth-last-child(1) {
+          margin-right: 0px;
+        }
+
+        p {
+          padding: 15px 30px;
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 51px;
+          color: #0c0c0c;
+          background-color: rgba(255, 255, 255, 0.8);
+        }
+      }
+    }
+  }
+}
+
+// ABOUT
 .about--section {
   margin-top: 61px !important;
 
