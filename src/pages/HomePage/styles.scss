@@ -198,3 +198,60 @@
     }
   }
 }
+
+.about--section {
+  margin-top: 61px !important;
+
+  .about--header-section {
+    display: flex;
+    align-items: center;
+
+    .separator {
+      width: 422px;
+      height: 1px;
+      background: #0c0c0c;
+      opacity: 0.2;
+    }
+
+    .about--header {
+      margin-right: 38px;
+      margin-left: 33px;
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 68px;
+      text-align: center;
+      color: #0c0c0c;
+    }
+  }
+
+  .about--content-section {
+    .about--subheader {
+      margin-top: 32px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 27px;
+      letter-spacing: 0.05em;
+      color: #000000;
+    }
+
+    .about--content {
+      width: 1135px;
+      margin-top: 15px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 29px;
+      color: #0c0c0c;
+    }
+
+    .about--show-more {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 27px;
+      letter-spacing: 0.05em;
+      text-decoration-line: underline;
+      color: #375d7c;
+    }
+  }
+}
