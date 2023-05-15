@@ -3,6 +3,8 @@ import SearchIcon from "../../global/assets/icons/search.svg";
 import CartIcon from "../../global/assets/icons/cart.svg";
 import ProfileIcon from "../../global/assets/icons/profile.svg";
 import HeartIcon from "../../global/assets/icons/heart.svg";
+import InstagramIcon from "../../global/assets/icons/instagram.svg";
+import FacebookIcon from "../../global/assets/icons/facebook.svg";
 import "./styles.scss";
 
 const HomePage = () => {
@@ -136,6 +138,62 @@ const HomePage = () => {
         </div>
       </div>
       {/* FOOTER SECTION */}
+      <footer>
+        <div className="footer--content content-container">
+          <div className="footer--first-column column">
+            <div className="logo"></div>
+            <div className="social-media-icons">
+              <img src={InstagramIcon} alt="icon" className="icon instagram" />
+              <img src={FacebookIcon} alt="icon" className="icon" />
+            </div>
+            <div className="copyright">© 2020 Arhome Interior decor</div>
+          </div>
+          <div className="footer--second-column column">
+            <div className="footer--header">
+              <div className="footer--header-content">Информация</div>
+              <div className="separator"></div>
+            </div>
+            <div className="footer--info">
+              <div className="footer--info-item">— Блог</div>
+              <div className="footer--info-item">— Каталог</div>
+              <div className="footer--info-item">— О нас</div>
+              <div className="footer--info-item">— Контакты</div>
+              <div className="footer--info-item">— Оплата и доставка</div>
+              <div className="footer--info-item">— Политика 
+    конфиденциальности </div>
+              <div className="footer--info-item">— Условия пользования</div>
+            </div>
+          </div>
+          <div className="footer--third-column column">
+            <div className="footer--header">
+              <div className="footer--header-content">Контакты</div>
+              <div className="separator"></div>
+            </div>
+            <div className="footer--contact">
+              <div className="contact">
+                <div className="contact-item address">г. Днепр, ул. Саранская, 95</div>
+                <div className="contact-item phone">+38 (050) 456-06-56</div>
+              </div>
+              <div className="contact">
+                <div className="contact-item address">г. Киев, ул. Глубочицкая, 13</div>
+                <div className="contact-item phone">+38 (050) 451-12-00</div>
+              </div>
+              <div className="email">arhome.com.ua@gmail.com</div>
+            </div>
+          </div>
+          <div className="footer--fourth-column column">
+            <div className="footer--header">
+              <div className="footer--header-content">новостная рассылка</div>
+              <div className="separator"></div>
+            </div>
+            <form>
+              <input type="email" placeholder="Ваш  Email" />
+              <p>Подписаться на новостную рассылку</p>
+              <button>Подписаться</button>
+            </form>
+          </div>
+        </div>
+      </footer>
     </>
   );
 };
