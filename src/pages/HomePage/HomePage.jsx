@@ -5,7 +5,9 @@ import ProfileIcon from "../../global/assets/icons/profile.svg";
 import HeartIcon from "../../global/assets/icons/heart.svg";
 import InstagramIcon from "../../global/assets/icons/instagram.svg";
 import FacebookIcon from "../../global/assets/icons/facebook.svg";
+import NewsCarousel from "./components/NewsCarousel";
 import "./styles.scss";
+import { NEWS_CAROUSEL_DATA } from "../../global/data/homePageData";
 
 const HomePage = () => {
   return (
@@ -113,6 +115,16 @@ const HomePage = () => {
       {/* TOP SALES */}
       {/* PROMOTION */}
       {/* NEWS */}
+      <div className="news--section content-container">
+        <div className="news--header-section">
+          <div className="separator"></div>
+          <h4 className="news--header">Новости компании</h4>
+          <div className="separator"></div>
+        </div>
+        <div className="news--content-section">
+          <NewsCarousel data={NEWS_CAROUSEL_DATA} />
+        </div>
+      </div>
       {/* ABOUT SECTION */}
       <div className="about--section content-container">
         <div className="about--header-section">
@@ -159,8 +171,9 @@ const HomePage = () => {
               <div className="footer--info-item">— О нас</div>
               <div className="footer--info-item">— Контакты</div>
               <div className="footer--info-item">— Оплата и доставка</div>
-              <div className="footer--info-item">— Политика 
-    конфиденциальности </div>
+              <div className="footer--info-item">
+                — Политика конфиденциальности{" "}
+              </div>
               <div className="footer--info-item">— Условия пользования</div>
             </div>
           </div>
@@ -171,11 +184,15 @@ const HomePage = () => {
             </div>
             <div className="footer--contact">
               <div className="contact">
-                <div className="contact-item address">г. Днепр, ул. Саранская, 95</div>
+                <div className="contact-item address">
+                  г. Днепр, ул. Саранская, 95
+                </div>
                 <div className="contact-item phone">+38 (050) 456-06-56</div>
               </div>
               <div className="contact">
-                <div className="contact-item address">г. Киев, ул. Глубочицкая, 13</div>
+                <div className="contact-item address">
+                  г. Киев, ул. Глубочицкая, 13
+                </div>
                 <div className="contact-item phone">+38 (050) 451-12-00</div>
               </div>
               <div className="email">arhome.com.ua@gmail.com</div>

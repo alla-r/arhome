@@ -151,7 +151,6 @@
 .hero {
   width: 100%;
   height: calc(100vh - 173px);
-  // margin-top: 173px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -314,6 +313,38 @@
   }
 }
 
+// NEWS
+.news--section {
+  margin-top: 40px !important;
+
+  .news--header-section {
+    display: flex;
+    align-items: center;
+
+    .separator {
+      width: 360px;
+      height: 1px;
+      background: #0c0c0c;
+      opacity: 0.2;
+    }
+
+    .news--header {
+      margin-right: 29px;
+      margin-left: 24px;
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 68px;
+      text-align: center;
+      color: #0c0c0c;
+    }
+  }
+
+  .news--content-section {
+    margin-top: 40px;
+    position: relative;
+  }
+}
+
 // ABOUT
 .about--section {
   margin-top: 61px !important;
@@ -351,7 +382,8 @@
     }
 
     .about--content {
-      width: 1135px;
+      width: 90%;
+      max-width: 1135px;
       margin-top: 15px;
       font-weight: 400;
       font-size: 16px;

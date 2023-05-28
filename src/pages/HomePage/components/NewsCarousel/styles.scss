@@ -1,0 +1,21 @@
+.swiper-button-next-unique {
+  position: absolute;
+  right: -25px;
+  top: 180px;
+  color: #0C0C0C;
+  width: 10px;
+  height: 15px;
+  background-image: url("../../../../global/assets/icons/right-arrow.svg");
+  cursor: pointer;
+}
+
+.swiper-button-prev-unique {
+  position: absolute;
+  left: -25px;
+  top: 180px;
+  color: #0C0C0C;
+  width: 10px;
+  height: 15px;
+  background-image: url("../../../../global/assets/icons/left-arrow.svg");
+  cursor: pointer;
+}
