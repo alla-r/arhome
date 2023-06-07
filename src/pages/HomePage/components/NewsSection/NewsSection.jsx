@@ -1,6 +1,6 @@
 import React from "react";
 import CustomHeader from "../CustomHeader";
-import NewsCarousel from "../NewsCarousel";
+import NewsCarousel from "./NewsCarousel";
 import { NewsWrapper } from "./styles";
 
 const NewsSection = ({ data, carouselData }) => {

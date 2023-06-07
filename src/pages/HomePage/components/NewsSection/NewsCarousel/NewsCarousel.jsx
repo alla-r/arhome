@@ -4,7 +4,7 @@ import { Navigation, Keyboard } from "swiper";
 import "swiper/css";
 import "swiper/scss/navigation";
 import { NewsCard } from "./styles";
-import { getMonthName } from "../../../../global/helpers";
+import { getMonthName } from "../../../../../global/helpers";
 import "./styles.scss";
 
 const NewsCarousel = ({ data }) => {
