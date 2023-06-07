@@ -6,8 +6,9 @@ import HeartIcon from "../../global/assets/icons/heart.svg";
 import InstagramIcon from "../../global/assets/icons/instagram.svg";
 import FacebookIcon from "../../global/assets/icons/facebook.svg";
 import NewsCarousel from "./components/NewsCarousel";
+import AboutSection from "./components/AboutSection";
 import "./styles.scss";
-import { NEWS_CAROUSEL_DATA } from "../../global/data/homePageData";
+import { NEWS_CAROUSEL_DATA, ABOUT_SECTION_DATA } from "../../global/data/homePageData";
 
 const HomePage = () => {
   return (
@@ -126,29 +127,7 @@ const HomePage = () => {
         </div>
       </div>
       {/* ABOUT SECTION */}
-      <div className="about--section content-container">
-        <div className="about--header-section">
-          <div className="separator"></div>
-          <h4 className="about--header">О компании</h4>
-          <div className="separator"></div>
-        </div>
-        <div className="about--content-section">
-          <p className="about--subheader">
-            Дизайнерская мебель для дома в интернет-магазине ARHome
-          </p>
-          <p className="about--content">
-            Когда отделочные работы закончены, начинается один из самых приятных
-            этапов ремонта – подбор мебели для дома. И, в первую очередь, нам
-            хочется меблировать гостиную. Ведь это помещение – общее для всей
-            семьи, здесь удобно собираться для неформальных бесед с близкими и
-            друзьями. Подбор современной мебели для гостиной не означает
-            банальную покупку мягкого дивана и нескольких кресел! Это тщательное
-            планирование, как будут размещаться и сочетаться между собой все
-            предметы обстановки, включая декор, ковры и освещение.
-          </p>
-          <div className="about--show-more">Читать далее</div>
-        </div>
-      </div>
+      <AboutSection data={ABOUT_SECTION_DATA} />
       {/* FOOTER SECTION */}
       <footer>
         <div className="footer--content content-container">
