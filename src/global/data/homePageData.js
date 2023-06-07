@@ -3,6 +3,13 @@ import NewsImage2 from "../assets/images/news2.png";
 import NewsImage3 from "../assets/images/news3.png";
 import NewsImage4 from "../assets/images/news4.png";
 
+export const HERO_SECTION_DATA = {
+  header: "Дизайнерская мебель",
+  content: `Широкий ассортимент изделий от лучших немецких дизайнеров, безупречное
+  качество и стиль`,
+  button: "Смотреть каталог"
+};
+
 export const NEWS_CAROUSEL_DATA = [
   {
     id: 1,
@@ -52,6 +59,10 @@ export const ABOUT_SECTION_DATA = {
   банальную покупку мягкого дивана и нескольких кресел! Это тщательное
   планирование, как будут размещаться и сочетаться между собой все
   предметы обстановки, включая декор, ковры и освещение.`
+};
+
+export const NEWS_SECTION_DATA = {
+  header: "Новости компании"
 };
 
 export const SHOW_MORE_TEXT = "Читать далее";

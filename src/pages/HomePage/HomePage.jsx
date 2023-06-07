@@ -5,10 +5,16 @@ import ProfileIcon from "../../global/assets/icons/profile.svg";
 import HeartIcon from "../../global/assets/icons/heart.svg";
 import InstagramIcon from "../../global/assets/icons/instagram.svg";
 import FacebookIcon from "../../global/assets/icons/facebook.svg";
-import NewsCarousel from "./components/NewsCarousel";
+import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import "./styles.scss";
-import { NEWS_CAROUSEL_DATA, ABOUT_SECTION_DATA } from "../../global/data/homePageData";
+import {
+  HERO_SECTION_DATA,
+  NEWS_CAROUSEL_DATA,
+  ABOUT_SECTION_DATA,
+  NEWS_SECTION_DATA,
+} from "../../global/data/homePageData";
+import NewsSection from "./components/NewsSection";
 
 const HomePage = () => {
   return (
@@ -73,16 +79,7 @@ const HomePage = () => {
         </div>
       </div>
       {/* HERO SECTION */}
-      <div className="hero">
-        <div className="hero--content">
-          <h1>Дизайнерская мебель</h1>
-          <p>
-            Широкий ассортимент изделий от лучших немецких дизайнеров,
-            безупречное качество и стиль
-          </p>
-          <button>Смотреть каталог</button>
-        </div>
-      </div>
+      <HeroSection data={HERO_SECTION_DATA} />
       {/* CATALOG */}
       <div className="catalog content-container">
         <div className="catalog--header-section">
@@ -116,16 +113,7 @@ const HomePage = () => {
       {/* TOP SALES */}
       {/* PROMOTION */}
       {/* NEWS */}
-      <div className="news--section content-container">
-        <div className="news--header-section">
-          <div className="separator"></div>
-          <h4 className="news--header">Новости компании</h4>
-          <div className="separator"></div>
-        </div>
-        <div className="news--content-section">
-          <NewsCarousel data={NEWS_CAROUSEL_DATA} />
-        </div>
-      </div>
+      <NewsSection data={NEWS_SECTION_DATA} carouselData={NEWS_CAROUSEL_DATA} />
       {/* ABOUT SECTION */}
       <AboutSection data={ABOUT_SECTION_DATA} />
       {/* FOOTER SECTION */}
